@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>My BACHA ❤️</title>
+
+<style>
+body{
+margin:0;
+font-family:Arial;
+background:linear-gradient(#ff416c,#ff4b2b);
+text-align:center;
+color:white;
+overflow-x:hidden;
+}
+
+.card{
+background:rgba(0,0,0,0.35);
+margin:15px;
+padding:20px;
+border-radius:20px;
+}
+
+img{
+width:100%;
+border-radius:15px;
+margin-top:10px;
+}
+
+button{
+padding:12px 25px;
+border:none;
+border-radius:25px;
+font-size:16px;
+background:white;
+color:#ff416c;
+margin:8px;
+}
+
+.heart{
+position:fixed;
+font-size:22px;
+animation:float 6s linear infinite;
+}
+
+@keyframes float{
+0%{bottom:-10px;opacity:1;}
+100%{bottom:100%;opacity:0;}
+}
+</style>
+</head>
+
+<body onload="popup(); hearts();">
+
+<h2>❤️ Happy Valentine BACHA ❤️</h2>
+
+<div class="card">
+
+<h3>Twinkle Gupta</h3>
+
+<p>
+BACHA… tum meri duniya ho ❤️  
+Tumhari smile meri sabse badi strength hai.
+
+Main wada karta hoon –  
+har situation mein tumhare saath rahunga,  
+tumhe respect karunga,  
+aur hamesha pyaar karunga 💕  
+
+— Deepak
+</p>
+
+<!-- CHANGE THESE IMAGE NAMES -->
+<img src="photo1.jpg">
+<img src="photo2.jpg">
+<img src="photo3.jpg">
+
+<br>
+
+<button onclick="yes()">YES ❤️</button>
+<button onclick="no()">NO 😜</button>
+
+<br><br>
+
+<a href="https://youtu.be/Jy7yH6zK2z0" target="_blank">
+<button>🎵 Play Our Song</button>
+</a>
+
+</div>
+
+<script>
+
+function popup(){
+setTimeout(()=>{
+alert("BACHA… Will you be my Valentine forever? ❤️");
+},1500);
+}
+
+function yes(){
+alert("YAYYY ❤️ I LOVE YOU SO MUCH BACHA 💕");
+}
+
+function no(){
+alert("NO option sirf dikhane ke liye 😜 Tum meri ho ❤️");
+}
+
+function hearts(){
+setInterval(()=>{
+const h=document.createElement("div");
+h.className="heart";
+h.innerHTML="❤️";
+h.style.left=Math.random()*100+"%";
+document.body.appendChild(h);
+setTimeout(()=>h.remove(),6000);
+},300);
+}
+
+</script>
+
+</body>
+  </html>
